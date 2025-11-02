@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static com.richardnagy.trackplayer.FileHandler.writeSavedTracks;
 import static com.richardnagy.trackplayer.TrackScanner.findTracks;
 
 public class HelloApplication extends Application {
@@ -18,6 +19,6 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
 
-        findTracks();
+        writeSavedTracks(findTracks());
     }
 }

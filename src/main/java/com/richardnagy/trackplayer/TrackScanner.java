@@ -1,15 +1,19 @@
 package com.richardnagy.trackplayer;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class TrackScanner {
-    static void findTracks() {
-        Path startPath = Paths.get("");
+    static ArrayList<String> findTracks() {
+        Path startPath = Paths.get("C:\\Users\\bigri\\Music");
+        ArrayList<String> trackFilePaths = new ArrayList<>();
 
         Set<String> trackTypes = Arrays.stream(TrackType.values()).map(TrackType::name).collect(Collectors.toSet());
         try {
@@ -26,7 +30,7 @@ public class TrackScanner {
                             String trackType = nameString.substring(typeSeparatorIndex + 1);
 
                             if (trackTypes.contains(trackType)) {
-                                IO.println("Found music file: " + nameString);
+                                trackFilePaths.add(file.toString());
                             }
                         }
                     }
@@ -37,5 +41,7 @@ public class TrackScanner {
         } catch (IOException e) {
             System.err.println("Error traversing directory: " + e.getMessage());
         }
+
+        return trackFilePaths;
     }
 }
