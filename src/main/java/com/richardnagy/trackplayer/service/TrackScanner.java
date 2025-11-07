@@ -16,7 +16,8 @@ import com.richardnagy.trackplayer.model.TrackType;
 
 public class TrackScanner {
     public static ArrayList<String> findTracks() {
-        Path startPath = Paths.get("C:\\Users\\bigri\\Music");
+        // Enter your
+        Path startPath = Paths.get("");
         ArrayList<String> trackFilePaths = new ArrayList<>();
 
         Set<String> trackTypes = Arrays.stream(TrackType.values()).map(TrackType::name).collect(Collectors.toSet());
