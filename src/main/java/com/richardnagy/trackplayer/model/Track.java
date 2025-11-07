@@ -31,8 +31,15 @@ public class Track {
     private ArrayList<Integer> genreIds;
 
     public Track(
-            String hash, Path path, String title, ArrayList<Integer> artistIds, int albumId, int length,
-            ArrayList<Integer> genreIds, int number, byte[] coverArt) {
+            String hash,
+            Path path,
+            String title,
+            ArrayList<Integer> artistIds,
+            int albumId,
+            int length,
+            ArrayList<Integer> genreIds,
+            int number,
+            byte[] coverArt) {
         this.fileHash = hash;
         this.filePath = path;
         this.title = title;
