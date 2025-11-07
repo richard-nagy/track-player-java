@@ -1,17 +1,21 @@
-package com.richardnagy.trackplayer;
+package com.richardnagy.trackplayer.service;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.*;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.richardnagy.trackplayer.model.TrackType;
+
 public class TrackScanner {
-    static ArrayList<String> findTracks() {
+    public static ArrayList<String> findTracks() {
         Path startPath = Paths.get("C:\\Users\\bigri\\Music");
         ArrayList<String> trackFilePaths = new ArrayList<>();
 

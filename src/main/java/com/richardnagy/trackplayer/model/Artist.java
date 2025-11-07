@@ -1,4 +1,4 @@
-package com.richardnagy.trackplayer;
+package com.richardnagy.trackplayer.model;
 
 public class Artist {
     /** Identifier of the artist. */

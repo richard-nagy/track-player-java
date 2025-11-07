@@ -1,14 +1,14 @@
 package com.richardnagy.trackplayer;
 
+import static com.richardnagy.trackplayer.service.FileHandler.writeSavedTracks;
+import static com.richardnagy.trackplayer.service.TrackScanner.findTracks;
+
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-
-import static com.richardnagy.trackplayer.FileHandler.writeSavedTracks;
-import static com.richardnagy.trackplayer.TrackScanner.findTracks;
 
 public class HelloApplication extends Application {
     @Override

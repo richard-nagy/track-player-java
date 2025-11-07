@@ -1,7 +1,11 @@
-package com.richardnagy.trackplayer;
+package com.richardnagy.trackplayer.service;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import com.richardnagy.trackplayer.model.Album;
+import com.richardnagy.trackplayer.model.Artist;
+import com.richardnagy.trackplayer.model.Track;
 
 public class DataManager {
     private final Map<String, Track> trackMap = new HashMap<>();

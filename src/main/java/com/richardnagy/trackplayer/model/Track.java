@@ -1,4 +1,4 @@
-package com.richardnagy.trackplayer;
+package com.richardnagy.trackplayer.model;
 
 import java.nio.file.Path;
 import java.util.ArrayList;

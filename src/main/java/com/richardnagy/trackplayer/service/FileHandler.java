@@ -1,4 +1,4 @@
-package com.richardnagy.trackplayer;
+package com.richardnagy.trackplayer.service;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

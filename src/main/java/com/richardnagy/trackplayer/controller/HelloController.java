@@ -1,4 +1,4 @@
-package com.richardnagy.trackplayer;
+package com.richardnagy.trackplayer.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
