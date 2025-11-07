@@ -5,12 +5,14 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.richardnagy.trackplayer.controller.TrackPlayerController">
+    fx:controller="com.richardnagy.trackplayer.controller.TrackPlayerController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="welcomeText" />
+    <Button text="Fetch the tracks!" onAction="#fetchTracks" />
+    <TextField fx:id="filePathInput" promptText="Enter file path here..." />
 </VBox>

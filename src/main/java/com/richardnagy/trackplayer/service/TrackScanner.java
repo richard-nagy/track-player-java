@@ -15,9 +15,9 @@ import java.util.stream.Collectors;
 import com.richardnagy.trackplayer.model.TrackType;
 
 public class TrackScanner {
-    public static ArrayList<String> findTracks() {
-        // Enter your
-        Path startPath = Paths.get("");
+    public static ArrayList<String> findTracks(String path) {
+        String escapedPath = path.replaceAll("\\\\", "\\\\\\\\\\\\");
+        Path startPath = Paths.get(escapedPath);
         ArrayList<String> trackFilePaths = new ArrayList<>();
 
         Set<String> trackTypes = Arrays.stream(TrackType.values()).map(TrackType::name).collect(Collectors.toSet());

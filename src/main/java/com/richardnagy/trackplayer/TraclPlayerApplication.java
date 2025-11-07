@@ -1,8 +1,5 @@
 package com.richardnagy.trackplayer;
 
-import static com.richardnagy.trackplayer.service.FileHandler.writeSavedTracks;
-import static com.richardnagy.trackplayer.service.TrackScanner.findTracks;
-
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -18,7 +15,5 @@ public class TraclPlayerApplication extends Application {
         stage.setTitle("Track Player");
         stage.setScene(scene);
         stage.show();
-
-        writeSavedTracks(findTracks());
     }
 }
