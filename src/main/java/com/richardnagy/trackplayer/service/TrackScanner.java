@@ -33,6 +33,7 @@ import com.richardnagy.trackplayer.model.TrackType;
 
 public class TrackScanner {
     public static ArrayList<Path> findTracks(String path) {
+        // Somehow handle spaces, and other special characters as well
         String escapedPath = path.replaceAll("\\\\", "\\\\\\\\\\\\");
         Path startPath = Paths.get(escapedPath);
         ArrayList<Path> trackFilePaths = new ArrayList<>();
