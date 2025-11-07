@@ -3,7 +3,7 @@ package com.richardnagy.trackplayer.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class TrackPlayerController {
     @FXML
     private Label welcomeText;
 
