@@ -1,11 +1,9 @@
 package com.richardnagy.trackplayer.model;
 
-public class Genre {
-    private int id;
-    private String name;
-
+/** Represents a music genres. */
+public class Genre extends MetadataEntity {
+    /** Initializes a new Genre entity. */
     public Genre(int id, String name) {
-        this.id = id;
-        this.name = name;
+        super(id, name);
     }
 }

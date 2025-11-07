@@ -3,8 +3,13 @@ package com.richardnagy.trackplayer.model;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
+/**
+ * Represents a single track file in the user's library.
+ * Acts as the core data structure, storing metadata and file location.
+ * Uses fileHash as the unique identifier.
+ */
 public class Track {
-    /** Behaves as the <b>Identifier<b>. */
+    /** Acts as the <b>unique identifier<b>. */
     private String fileHash;
 
     /** Path of the file. */

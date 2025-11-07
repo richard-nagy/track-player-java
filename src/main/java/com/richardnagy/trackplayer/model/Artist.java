@@ -1,14 +1,9 @@
 package com.richardnagy.trackplayer.model;
 
-public class Artist {
-    /** Identifier of the artist. */
-    private int id;
-
-    /** Name of the artist. */
-    private String name;
-
+/** Represents a music artist. */
+public class Artist extends MetadataEntity {
+    /** Initializes a new Artist entity. */
     public Artist(int id, String name) {
-        this.id = id;
-        this.name = name;
+        super(id, name);
     }
 }
